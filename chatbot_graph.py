@@ -9,7 +9,7 @@ from answer_search import *
 class ChatBotGraph():
     def __init__(self, pDate):
         self.classifier = QuestionClassifier()
-        self.parser = QuestionPaser(pDate)
+        self.parser = QuestionParser(pDate)
         self.searcher = AnswerSearcher()
 
     def chat_kg_main(self, sent):
